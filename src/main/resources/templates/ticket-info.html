@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacije o ulaznici</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<header>
+  <a href="/logout" class="logout">Odjava</a>
+  <p class="user-info">Prijavljen korisnik: <span th:text="${userName}"></span></p>
+</header>
+
+<div class="container">
+  <h1>Informacije o ulaznici</h1>
+
+  <div th:if="${ticketInfo != null}">
+    <p><strong>Vlasnik ulaznice:</strong> <span th:text="${ticketInfo.firstName}"></span> <span th:text="${ticketInfo.lastName}"></span></p>
+    <p><strong>OIB:</strong> <span th:text="${ticketInfo.vatin}"></span></p>
+    <p><strong>Vrijeme kreiranja:</strong> <span th:text="${#dates.format(ticketInfo.createdAt, 'dd.MM.yyyy. HH:mm:ss')}"></span></p>
+  </div>
+  <div th:if="${ticketInfo == null}">
+    <p>Ulaznica nije pronađena.</p>
+  </div>
+</div>
+</body>
+</html>

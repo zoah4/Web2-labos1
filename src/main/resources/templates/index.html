@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broj Generiranih Ulaznica</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="home-page-body">
+
+<h1 class="home-page-h1">Ukupno generiranih ulaznica:</h1>
+<div class="main-div">
+    <div class="left-div">
+    </div>
+    <div class="right-div">
+        <div class="ticket-count" th:text="${ticketCount}">Učitavanje...</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.home-page-body {
+    width: 40%;
+    flex-direction: column;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a00ac9;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 38px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    border: 2px solid #a00ac9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+.home-page-h1 {
+    margin: -30px 0 60px;
+    padding: 10px;
+    font-size: 60px;
+}
+
+p {
+    font-size: 22px;
+}
+
+a {
+    margin-top: 17px;
+    margin-left: 10px;
+    color: white;
+}
+
+.ticket-count {
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-div {
+    width: 80%;
+    margin: -30px auto 20px auto;
+    background-color: #a00ac9;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-div {
+    flex: 1;
+    padding: 40px 10px;
+}
+
+.right-div {
+    flex: 4;
+    border-left: 2px dashed #f4f4f4;
+    padding: 40px 10px;
+}
+
+.user-info {
+    margin-right: 10px;
+    font-size: 18px;
+}
