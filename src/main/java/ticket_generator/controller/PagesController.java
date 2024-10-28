@@ -37,7 +37,6 @@ public class PagesController {
     @GetMapping("/logout")
     public String logout(HttpServletRequest request) {
         request.getSession().invalidate();
-        //izmjeni nakon deploya http://localhost:8080/
         String logoutUrl = "https://fer-web2-zh.eu.auth0.com/v2/logout?returnTo=https://ticket-app-web2-lab1.onrender.com/&client_id=vMZYtCX7jV5wvMmoTO7SXPz1vPbsXYbB";
         return "redirect:" + logoutUrl;
     }

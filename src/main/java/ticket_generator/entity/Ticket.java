@@ -16,7 +16,7 @@ import java.util.UUID;
 public class Ticket {
     @Id
     @Column(nullable = false)
-    private UUID id; //ili private String id;
+    private UUID id;
     @Column(length = 11, nullable = false)
     private String vatin; //OIB
     private String firstName;
