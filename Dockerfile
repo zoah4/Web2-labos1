@@ -1,4 +1,4 @@
-FROM maven:4.0.0-openjdk-18 as builder
+FROM maven:3.9.5-openjdk-18 as builder
 WORKDIR /app
 COPY src ./src
 COPY pom.xml .
