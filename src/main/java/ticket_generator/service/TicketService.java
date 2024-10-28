@@ -41,7 +41,7 @@ public class TicketService {
         ticket.setCreatedAt(Timestamp.valueOf(LocalDateTime.now()));
         save(ticket);
         //izmjeni ovaj dio http://localhost:8080 nakon deploya (frontend?)
-        String url = "http://localhost:8080/ticket-info/" + id;
+        String url = "https://ticket-app-web2-lab1.onrender.com/ticket-info/" + id;
         try {
             BitMatrix matrix = new MultiFormatWriter().encode(url, BarcodeFormat.QR_CODE, 300, 300);
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
